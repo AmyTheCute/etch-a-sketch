@@ -1,6 +1,7 @@
 //Global Variables
-const gridPixelSize = 500.0;
 const container = document.querySelector("#container")
+
+const gridPixelSize = 500.0;
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -20,9 +21,6 @@ function rgbToHex(r, g, b) {
 function makeGrid(num) {
 
 	let pixelSize = gridPixelSize/num;
-
-	// container.style.gridTemplateColumns = `repeat(${(num)}, ${(pixelSize)}px`
-	// container.style.gridTemplateRows = `repeat(${(num)}, ${(pixelSize)}px`;
 
 	for (let i = 0; i < num*num; i++) {
 	
